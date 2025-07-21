@@ -2,12 +2,16 @@
 using namespace std;
 
 int main() {
-    double name; //Variable declaration
-    name = 23.0000; //Variable assignment
 
-    int age = 67;
+    int age;
 
-    cout << name << endl;
-    cout << age << name;
+    cout<<"Welcome to our age calculator"<<endl;
+    cout<<"------------------------------"<<endl;
+
+    cout<<"Enter your age: ";
+    cin>>age;
+
+    cout<<"You will be "<<age + 20<<" years old in 20 years time.";
+
     return 0;
 }
