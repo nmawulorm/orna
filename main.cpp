@@ -2,16 +2,26 @@
 using namespace std;
 
 int main() {
+    string currency;
+    int amount;
+    int duration;
 
-    int age;
+    cout << "Welcome to O&B Loans and Savings" <<endl;
+    cout << "---------------------------------" <<endl;
 
-    cout<<"Welcome to our age calculator"<<endl;
-    cout<<"------------------------------"<<endl;
+    cout << "Fill out the following" << endl;
+    cout << "currency: ";
+    cin >> currency;
+    cout << "amount: ";
+    cin >> amount;
+    cout << "duration: ";
+    cin >> duration;
 
-    cout<<"Enter your age: ";
-    cin>>age;
+    cout << "------------------\n";
+    cout << "Total: "<<currency<<amount * duration * 0.1 + amount;
 
-    cout<<"You will be "<<age + 20<<" years old in 20 years time.";
+
+
 
     return 0;
 }
