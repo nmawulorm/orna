@@ -10,11 +10,11 @@ int main() {
     cout << "---------------------------------" <<endl;
 
     cout << "Fill out the following" << endl;
-    cout << "currency: ";
+    cout << "Currency: ";
     cin >> currency;
-    cout << "amount: ";
+    cout << "Amount: ";
     cin >> amount;
-    cout << "duration: ";
+    cout << "Duration: ";
     cin >> duration;
 
     cout << "------------------\n";
