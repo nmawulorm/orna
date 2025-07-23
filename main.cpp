@@ -1,23 +1,15 @@
-#include <cmath>
+#include <complex>
 #include <iostream>
+#include <math.h>
 using namespace std;
 
-int main() {
+int main(){
+       int num;
+       cout<< "Enter a number: "; cin>>num;
 
-    double grade;
+       for (int i=1; i<=12; i++) {
+              cout <<num<< " x "<< i <<" = "<< num * i << endl;
+       }
 
-    cout<< "Check your degree honours\n";
-
-    cout<<"Enter your grade: "; cin>>grade;
-
-    if (grade < 2.0) cout << "Pass" << endl;
-    else if (grade < 2.5) cout << "Third Class" << endl;
-    else if (grade < 3.0) cout << "Second class lower" << endl;
-    else if (grade < 3.5) cout << "Second class upper" << endl;
-    else {
-        cout <<"First class" << endl;
-        cout << "The eye of the country";
-    }
-
-    return 0;
+       return 0;
 }
