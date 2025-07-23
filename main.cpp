@@ -4,17 +4,20 @@ using namespace std;
 
 int main() {
 
-    int wordCounts, remaining, wordLimit = 1000;;
+    double grade;
 
-    cout<<"Enter wordCounts: "; cin>>wordCounts;
-    remaining = wordLimit - wordCounts;
+    cout<< "Check your degree honours\n";
 
-    if (wordCounts < wordLimit) {
-        cout<<"You have "<< remaining<<" words remaining.";
-        cout<<"You have "<< remaining<<" words remaining.";
+    cout<<"Enter your grade: "; cin>>grade;
+
+    if (grade < 2.0) cout << "Pass" << endl;
+    else if (grade < 2.5) cout << "Third Class" << endl;
+    else if (grade < 3.0) cout << "Second class lower" << endl;
+    else if (grade < 3.5) cout << "Second class upper" << endl;
+    else {
+        cout <<"First class" << endl;
+        cout << "The eye of the country";
     }
-    else if (wordCounts == wordLimit) cout<<"Congratulations, you have reached your words limit!";
-    else cout<<"You have exceeded your limits by "<<remaining * -1<<" words!";
 
     return 0;
 }
