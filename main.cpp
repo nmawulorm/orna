@@ -3,15 +3,19 @@
 using namespace std;
 
 int main() {
-    float length, width;
+    float a, b, c, x1, x2, frac1, frac2;
+    cout<<"Quadratic calculator\n---------------------\n";
+    cout<<"Enter a: "; cin>>a;
+    cout<<"Enter b: "; cin>>b;
+    cout<<"Enter c: "; cin>>c;
 
-    cout<<"Square Length\n----------------------\n";;
-    cout<<"Enter length: "; cin>>length;
-    cout<<"Enter width: "; cin>>width;
+    frac1 = (-b/2*a);
+    frac2 = pow(pow(b,2)-4*a*c,0.5)/(2*a);
 
-    cout<<"A rectangle with length: "<<length;
-    cout<<" and width: "<<width;
-    cout<<" will result in a square with side: "<<pow(length * width,0.5);
+    x1 = frac1+frac2;
+    x2 = frac1-frac2;
+
+    cout<<"The quadratic equation is: x1="<<x1<<", x2="<<x2;
 
     return 0;
 }

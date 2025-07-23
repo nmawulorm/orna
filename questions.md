@@ -1,3 +1,7 @@
-Make a calculator that finds the side a square whose area 
-perfectly fits the area of any given rectangle provided the length and 
-breadth of the rectangle is given
+Write a C++ program the finds the two values of ***x***:
+* **_Note_**: $ ax^2 + bx + c = 0 $
+* The almighty formula: $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$.
+* The plus almighty formula: $x = \frac{-b + \sqrt{b^2 - 4ac}}{2a}$.
+* The minus almighty formula: $x = \frac{-b - \sqrt{b^2 - 4ac}}{2a}$.
+* The split plus almighty formula: $x = \frac{-b}{2a}  + \frac{\sqrt{b^2 - 4ac}}{2a}$.
+* The split plus almighty formula: $x = \frac{-b}{2a}  - \frac{\sqrt{b^2 - 4ac}}{2a}$.
