@@ -4,12 +4,17 @@ using namespace std;
 
 int main() {
 
-    string password, confirmPassword;
-    cout<<"Enter password: "; cin>>password;
-    cout<<"Confirm password: "; cin>>confirmPassword;
+    int wordCounts, remaining, wordLimit = 1000;;
 
-    if (password==confirmPassword) cout<<"Your passwords match";
-    else cout<<"Your passwords do not match";
+    cout<<"Enter wordCounts: "; cin>>wordCounts;
+    remaining = wordLimit - wordCounts;
+
+    if (wordCounts < wordLimit) {
+        cout<<"You have "<< remaining<<" words remaining.";
+        cout<<"You have "<< remaining<<" words remaining.";
+    }
+    else if (wordCounts == wordLimit) cout<<"Congratulations, you have reached your words limit!";
+    else cout<<"You have exceeded your limits by "<<remaining * -1<<" words!";
 
     return 0;
 }
