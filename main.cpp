@@ -1,15 +1,15 @@
-#include <complex>
 #include <iostream>
-#include <math.h>
 using namespace std;
+int main() {
+    string username, password;
+    cout << "Enter username: "; cin >> username;
+    cout << "Enter password: "; cin >> password;
 
-int main(){
-       int num;
-       cout<< "Enter a number: "; cin>>num;
+    bool nickAut= username=="nmawulorm" && password=="password";
+    bool ornaAut= username=="orna" && password=="orna_pass";
 
-       for (int i=1; i<=12; i++) {
-              cout <<num<< " x "<< i <<" = "<< num * i << endl;
-       }
+    if (nickAut||ornaAut) cout << "Login successful" << endl;
+    else cout << "Access denied" << endl;
 
-       return 0;
+    return 0;
 }
