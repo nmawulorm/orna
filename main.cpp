@@ -1,31 +1,29 @@
 #include <iostream>
 using namespace std;
 int main() {
-    double totalCost, quantity, height,
-    bobCut = 750/10,
-    wetCurls = 1000/10,
-    afro=500/5,
-    pixyCut=500/5;
-    cout<<"Hi, please indicate details of the bob cut (GH "<<bobCut<<")\n";
-    cout<<"Height: "; cin>>height;
-    cout<<"Quantity: "; cin>>quantity;
-    totalCost = quantity * bobCut * height;
+    double height, totalCoast,quality, bobcut, afro, pixiecut;
+    bobcut = 750.0/10;
+    afro = 950.0/5;
+    pixiecut = 1050.0/3;
 
-    cout<<"Hi, please indicate details of the wetCurls (GH "<<wetCurls<<")\n";
+    cout<<"Place your bob cut order\n";
     cout<<"Height: "; cin>>height;
-    cout<<"Quantity: "; cin>>quantity;
-    totalCost = (quantity * wetCurls * height) + totalCost;
+    cout<<"Quality: "; cin>>quality;
 
-    cout<<"Hi, please indicate details of the afro (GH "<<afro<<")\n";
+    totalCoast = height*quality*bobcut;
+
+    cout<<"Place your afro hair order\n";
     cout<<"Height: "; cin>>height;
-    cout<<"Quantity: "; cin>>quantity;
-    totalCost = (quantity * afro * height) + totalCost;
+    cout<<"Quality: "; cin>>quality;
 
-    cout<<"Hi, please indicate details of the pixy cut (GH "<<pixyCut<<")\n";
+    totalCoast = (height*quality*afro)+totalCoast;
+
+    cout<<"Place your pixie cut order\n";
     cout<<"Height: "; cin>>height;
-    cout<<"Quantity: "; cin>>quantity;
-    totalCost = (quantity * pixyCut * height) + totalCost;
+    cout<<"Quality: "; cin>>quality;
 
-    cout<<"Your total cost is GH "<<totalCost<<endl;
-    return 0;
-}
+    totalCoast = (height*quality*pixiecut)+totalCoast;
+
+    cout<<"Your total cost is: "<<totalCoast<< " ghana cedis.";
+
+    }
